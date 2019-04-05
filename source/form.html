@@ -34,6 +34,55 @@
       <div class="promo">
         <img class="promo__image promo__image--small" src="http://placehold.it/282x214" width="282" height="214" alt="Слоган">
       </div>
+      <section class="feedback">
+        <div class="description">
+          <h2 class="description__header">Оставьте свой отзыв</h2>
+          <p class="description__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <form class="profile" name="profile" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="profile__item">
+            <legend class="profile__caption">Представьтесь</legend>
+            <label class="profile__title" for="username">Имя*:</label>
+            <input class="profile__field" type="text" name="username" id="name" placeholder="Петр" required>
+            <label class="profile__title" for="surname">Фамилия*:</label>
+            <input class="profile__field" type="text" name="suname" id="surname" placeholder="Иванов" required>
+            <label class="profile__title" for="patronymic">Отчество:</label>
+            <input class="profile__field" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+          </fieldset>
+          <fieldset class="profile__item">
+            <legend class="profile__caption">Контактная информация</legend>
+            <label class="profile__title" for="tel">Контактный телефон*:</label>
+            <input class="profile__field" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+            <label class="profile__title" for="email">Электронная почта*:</label>
+            <input class="profile__field" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+          </fieldset>
+          <fieldset class="profile__item">
+            <legend class="profile__caption">Ваше общее впечатление:</legend>
+            <input class="profile__radio" type="radio" name="impression" id="positive" value="positive" checked>
+            <label class="profile__title profile__title--black" for="positive">Скорее положительное</label>
+            <input class="profile__radio" type="radio" name="impression" id="negative" value="negative">
+            <label class="profile__title profile__title--black" for="negative">Скорее отрицательное</label>
+            <input class="profile__radio" type="radio" name="impression" id="difficult" value="difficult">
+            <label class="profile__title profile__title--black" for="difficult">Затрудняюсь ответить</label>
+          </fieldset>
+          <fieldset class="profile__item">
+            <legend class="profile__caption">Посещенные достопримечательности</legend>
+            <input class="profile__checkbox" type="checkbox" name="bridge" id="bridge" value="Мост Дьявола" checked>
+            <label class="profile__title profile__title--black" for="bridge">Мост Дьявола</label>
+            <input class="profile__checkbox" type="checkbox" name="bell" id="bell" value="Гора-Колокол" checked>
+            <label class="profile__title profile__title--black" for="bell">Гора-Колокол</label>
+            <input class="profile__checkbox" type="checkbox" name="park" id="park" value="Слайд-парк" checked>
+            <label class="profile__title profile__title--black" for="park">Слайд-парк</label>
+            <input class="profile__checkbox" type="checkbox" name="rock" id="rock" value="Красные скалы">
+            <label class="profile__title profile__title--black" for="rock">Красные скалы</label>
+          </fieldset>
+          <fieldset class="profile__item">
+            <legend class="profile__caption">Опишите свои эмоции:</legend>
+            <textarea class="profile__textarea" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <button class="profile__button" type="submit">Отправить отзыв</button>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <p class="footer__hashtag">#visitsedona</p>
