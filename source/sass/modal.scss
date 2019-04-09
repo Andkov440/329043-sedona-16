@@ -1,0 +1,26 @@
+.modal {
+  text-align: center;
+  outline: 1px solid red;
+}
+
+.modal__caption {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  color: #000000;
+  padding-top: 46px;
+}
+
+.modal__text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: #333333;
+}
+
+.modal__footer {
+  background-color: #f2f2f2;
+}
+
+.modal__button {
+  margin-bottom: 20px;
+}

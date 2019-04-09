@@ -1,0 +1,22 @@
+.reason-item {
+  background-color: $color-blue;
+  color: $color-white;
+  text-align: center;
+
+}
+
+.reason-item__header {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  padding-top: 45px;
+}
+
+.reason-item__text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.reason-item__image {
+  margin-top: 31px;
+}

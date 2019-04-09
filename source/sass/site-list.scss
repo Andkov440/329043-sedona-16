@@ -1,0 +1,29 @@
+.site-list {
+  background-color: $color-blue;
+  list-style: none;
+  text-align: center;
+}
+
+.site-list__link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: $color-white;
+  line-height: 2.22;
+}
+
+.site-list__link:link,
+.site-list__link:visited {
+  color: $color-white;
+}
+
+.site-list__item {
+  padding: 8px 0;
+}
+
+.site-list__toggle {
+  height: 22px;
+  width: 22px;
+  border: none;
+  background: url("../img/icon-cross.svg");
+}

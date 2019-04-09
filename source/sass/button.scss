@@ -1,0 +1,18 @@
+.button {
+  color: $color-white;
+  text-decoration: none;
+  background-color: $color-blue;
+  font-size: 21px;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  display: block;
+  width: 280px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin: 0 auto;
+}
+
+.button--smaller {
+  width: 180px;
+}

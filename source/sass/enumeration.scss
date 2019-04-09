@@ -1,0 +1,18 @@
+.enumeration {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.enumeration__header {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  color: $color-black;
+}
+
+.enumeration__text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+}

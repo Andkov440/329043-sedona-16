@@ -2,16 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page">
     <header class="header">
       <nav class="main-menu">
-        <button class="main-manu__toggle" type="button"></button>
         <ul class="main-menu__list site-list">
           <li class="site-list__item">
             <a class="site-list__link">Главная</a>
+            <button class="site-list__toggle" type="button"></button>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фото и видео</a>
@@ -24,15 +25,15 @@
           </li>
         </ul>
       </nav>
-      <div class="logo">
+      <div class="logo header__logo">
         <a>
-          <img class="logo__image" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта">
+          <img class="logo__image" src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта">
         </a>
       </div>
     </header>
     <main>
       <div class="promo">
-        <img class="promo__image" src="http://placehold.it/282x214" width="282" height="214" alt="Слоган">
+        <img class="promo__image" src="../img/text-sedona-index.svg" width="282" height="214" alt="Слоган">
       </div>
       <section class="advantages">
         <div class="description">
@@ -42,10 +43,10 @@
         <div class="reason-item">
           <h2 class="reason-item__header">Настоящий городок</h2>
           <p class="reason-item__text">— №1 —</p>
-          <p class="reason-item__text">Седона не аттракцион для турмстов, там течет своя жизнь</p>
-          <img class="reason-item__image" src="http://placehold.it/520x260" width="520" height="260" alt="Фото города">
+          <p class="reason-item__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <img class="reason-item__image" src="http://placehold.it/320x260" width="320" height="260" alt="Фото города">
         </div>
-        <ul class="enumeration">
+        <ul class="enumeration advantages__list">
           <li class="enumeration__item">
             <h2 class="enumeration__header">Жилье</h2>
             <p class="enumeration__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -63,9 +64,9 @@
           <h2 class="reason-item__header">Там есть Мост дьявола</h2>
           <p class="reason-item__text">— №2 —</p>
           <p class="reason-item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <img class="reason-item__image" src="http://placehold.it/520x260" width="520" height="260" alt="Фото города">
+          <img class="reason-item__image" src="http://placehold.it/320x260" width="320" height="260" alt="Фото города">
         </div>
-        <ul class="sight-list">
+        <ul class="sight-list advantages__items">
           <li class="sight-list__item">
             <h2 class="sight-list__header">Небольшая площадь</h2>
             <p class="sight-list__text">— №3 —</p>
@@ -86,14 +87,15 @@
       <div class="suggestion">
         <h2 class="suggestion__caption">Заинтересовались?</h2>
         <p class="suggestion__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="suggestion__button">Найти гостиницу</a>
+        <a class="suggestion__button button" href="#">Найти гостиницу</a>
       </div>
-      <div id="map"></div>
+      <div class="map">
+        <img class="map__image" src="http://placehold.it/320x350" width="320" height="350" alt="Карта">
+      </div>
     </main>
     <footer class="footer">
       <p class="footer__hashtag">#visitsedona</p>
       <div class="footer__social social">
-        <b class="social__title">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
