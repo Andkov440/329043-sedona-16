@@ -22,6 +22,14 @@
   background-color: $color-grey;
   height: 58px;
   margin-bottom: 20px;
+
+  &::placeholder {
+    text-transform: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    color: $color-black;
+  }
 }
 
 .profile__textarea {
@@ -30,13 +38,12 @@
   margin-right: auto;
   width: 279px;
   height: 160px;
-}
 
-.profile__field::placeholder,
-.profile__textarea::placeholder {
-  text-transform: none;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: left;
-  color: $color-black;
+  &::placeholder {
+    text-transform: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    color: $color-black;
+  }
 }

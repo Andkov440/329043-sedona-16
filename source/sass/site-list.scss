@@ -10,10 +10,10 @@
   font-weight: bold;
   color: $color-white;
   line-height: 40px;
-}
 
-.site-list__link:visited {
-  color: $color-white;
+  &:visited {
+    color: $color-white;
+  }
 }
 
 .site-list__item {
