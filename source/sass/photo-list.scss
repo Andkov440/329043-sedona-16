@@ -4,7 +4,7 @@
   margin-left: 0;
   padding-left: 0;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 24px;
 }
 
 .photo-list__caption {
@@ -21,16 +21,15 @@
 .photo-list__like-count {
   font-size: 14px;
   font-weight: bold;
-  line-height: 1.71;
   text-align: left;
 }
 
 .photo-list__item {
   border-top: 1px solid #e5e5e5;
-}
 
-.photo-list__item:last-child {
-  border-bottom: 1px solid #e5e5e5;
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 
 .photo-list__image {

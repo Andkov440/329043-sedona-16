@@ -1,19 +1,20 @@
-@charset 'utf-8';
+@import "normalize";
 @import "variables";
 @import "advantages";
 @import "button";
 @import "copyright";
 @import "description";
 @import "enumeration";
-@import "feedback";
+/* @import "feedback"; */
+@import "fonts";
 @import "footer";
-@import "header";
+/* @import "header"; */
 @import "logo";
 @import "map";
 @import "main-menu";
 @import "modal";
 @import "page";
-@import "photo";
+/*@import "photo"; */
 @import "photo-list";
 @import "player";
 @import "profile";

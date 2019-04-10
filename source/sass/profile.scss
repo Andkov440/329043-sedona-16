@@ -1,3 +1,7 @@
+.profile {
+  line-height: 26px;
+}
+
 .profile__item {
   border: none;
   border-bottom: 1px solid #e5e5e5;
@@ -10,7 +14,6 @@
 
 .profile__title {
   font-size: 14px;
-  line-height: 1.86;
   color: #333333;
 }
 
@@ -25,6 +28,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 279px;
+  height: 160px;
 }
 
 .profile__field::placeholder,
@@ -32,7 +37,6 @@
   text-transform: none;
   font-size: 18px;
   font-weight: bold;
-  line-height: 1.44;
   text-align: left;
   color: $color-black;
 }
