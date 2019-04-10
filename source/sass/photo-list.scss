@@ -1,0 +1,37 @@
+.photo-list {
+  text-align: center;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo-list__caption {
+  font-weight: bold;
+  text-align: left;
+}
+
+.photo-list__author {
+  color: #333333;
+  text-transform: none;
+  text-align: left;
+}
+
+.photo-list__like-count {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.photo-list__item {
+  border-top: 1px solid #e5e5e5;
+
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.photo-list__image {
+  margin-top: 22px;
+}

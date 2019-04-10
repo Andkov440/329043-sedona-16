@@ -1,0 +1,21 @@
+.site-list {
+  background-color: $color-blue;
+  list-style: none;
+  text-align: center;
+}
+
+.site-list__link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: $color-white;
+  line-height: 40px;
+
+  &:visited {
+    color: $color-white;
+  }
+}
+
+.site-list__item {
+  padding: 8px 0;
+}

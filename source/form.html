@@ -2,13 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона. Форма отзыва</title>
   </head>
   <body class="page">
     <header class="header">
       <nav class="main-menu">
-        <button class="main-manu__toggle" type="button"></button>
         <ul class="main-menu__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -23,8 +22,9 @@
             <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
+        <button class="main-menu__toggle" type="button"></button>
       </nav>
-      <div class="logo">
+      <div class="logo header__logo">
         <a href="index.html">
           <img class="logo__image" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта">
         </a>
@@ -80,14 +80,13 @@
             <legend class="profile__caption">Опишите свои эмоции:</legend>
             <textarea class="profile__textarea" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="profile__button" type="submit">Отправить отзыв</button>
+          <input class="profile__button button" type="submit" value="Отправить отзыв">
         </form>
       </section>
     </main>
     <footer class="footer">
       <p class="footer__hashtag">#visitsedona</p>
       <div class="footer__social social">
-        <b class="social__title">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
@@ -108,12 +107,14 @@
     <div class="modal">
       <h2 class="modal__caption">Что-то пошло не так!</h2>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal__button">Ок</button>
+      <button class="button modal__button button--smaller">Ок</button>
     </div>
     <div class="modal">
       <h2 class="modal__caption">Ваш отзыв отправлен!</h2>
       <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="modal__button">Закрыть окно</button>
+      <div class="modal__footer">
+        <button class="button modal__button">Закрыть окно</button>
+      </div>
     </div>
   </body>
 </html>
