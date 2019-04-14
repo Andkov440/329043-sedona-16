@@ -21,3 +21,30 @@
   color: #333333;
   line-height: 21px;
 }
+
+@media (min-width: $tablet-width) {
+  .sight-list {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .sight-list__item {
+    width: 160px;
+  }
+
+  .sight-list__header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sight-list__header {
+    font-size: 21px;
+  }
+
+  .sight-list__item {
+    width: 284px;
+  }
+}

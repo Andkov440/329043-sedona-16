@@ -19,3 +19,19 @@
 .reason-item__image {
   margin-top: 31px;
 }
+
+@media (min-width: $tablet-width) {
+  .reason-item {
+    display: flex;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .reason-item__wrapper {
+    margin-left: 47px;
+    margin-right: 47px;
+    width: 162px;
+  }
+}

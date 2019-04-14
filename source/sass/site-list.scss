@@ -19,3 +19,21 @@
 .site-list__item {
   padding: 8px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    background-color: $color-white;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .site-list__link {
+    font-size: 14px;
+    line-height: 26px;
+    color: $color-black;
+
+    &:visited {
+      color: $color-black;
+    }
+  }
+}

@@ -11,3 +11,9 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (min-width: $tablet-width) {
+  .main-menu__toggle {
+    display: none;
+  }
+}

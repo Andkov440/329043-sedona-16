@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
     <header class="header">
@@ -30,7 +31,7 @@
         </a>
       </div>
     </header>
-    <main>
+    <main class="main">
       <div class="promo">
         <img class="promo__image" src="../img/text-sedona-index.svg" width="282" height="214" alt="Слоган">
       </div>
@@ -40,9 +41,11 @@
           <p class="description__text">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
         </div>
         <div class="reason-item">
-          <h2 class="reason-item__header">Настоящий городок</h2>
-          <p class="reason-item__text">— №1 —</p>
-          <p class="reason-item__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="reason-item__wrapper">
+            <h2 class="reason-item__header">Настоящий городок</h2>
+            <p class="reason-item__text">— №1 —</p>
+            <p class="reason-item__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
           <img class="reason-item__image" src="http://placehold.it/320x260" width="320" height="260" alt="Фото города">
         </div>
         <ul class="enumeration advantages__list">
@@ -59,10 +62,12 @@
             <p class="enumeration__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </li>
         </ul>
-        <div class="reason-item">
-          <h2 class="reason-item__header">Там есть Мост дьявола</h2>
-          <p class="reason-item__text">— №2 —</p>
-          <p class="reason-item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <div class="reason-item reason-item--reverse">
+          <div class="reason-item__wrapper">
+            <h2 class="reason-item__header">Там есть Мост дьявола</h2>
+            <p class="reason-item__text">— №2 —</p>
+            <p class="reason-item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
           <img class="reason-item__image" src="http://placehold.it/320x260" width="320" height="260" alt="Фото города">
         </div>
         <ul class="sight-list advantages__items">
@@ -84,11 +89,13 @@
         </ul>
       </section>
       <div class="suggestion">
-        <h2 class="suggestion__caption">Заинтересовались?</h2>
-        <p class="suggestion__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <div class="suggestion__wrapper">
+          <h2 class="suggestion__caption">Заинтересовались?</h2>
+          <p class="suggestion__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
         <a class="suggestion__button button" href="#">Найти гостиницу</a>
       </div>
-      <div class="map">
+      <div class="map main__map">
         <img class="map__image" src="http://placehold.it/320x350" width="320" height="350" alt="Карта">
       </div>
     </main>
@@ -109,7 +116,7 @@
       </div>
       <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>

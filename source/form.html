@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона. Форма отзыва</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
     <header class="header">
@@ -101,19 +102,19 @@
       </div>
       <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
-    <div class="modal">
+    <div class="modal modal--">
       <h2 class="modal__caption">Что-то пошло не так!</h2>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="button modal__button button--smaller">Ок</button>
     </div>
-    <div class="modal">
+    <div class=" modal modal--wide">
       <h2 class="modal__caption">Ваш отзыв отправлен!</h2>
       <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <div class="modal__footer">
-        <button class="button modal__button">Закрыть окно</button>
+        <button class="button modal__button modal__button--wide">Закрыть окно</button>
       </div>
     </div>
   </body>

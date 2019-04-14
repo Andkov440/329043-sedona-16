@@ -1,6 +1,6 @@
 .description {
   text-align: center;
-  line-height: 26px;
+  margin: 0 auto;
 }
 
 .description__header {
@@ -8,9 +8,31 @@
   font-weight: bold;
   color: $color-black;
   margin-top: 43px;
+  line-height: 26px;
 }
 
 .description__text {
   color: #333333;
   font-size: 14px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .description {
+    width: 490px;
+  }
+
+  .description__header {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description {
+    width: 428px;
+  }
+
+  .description__header {
+    font-size: 30px;
+  }
 }

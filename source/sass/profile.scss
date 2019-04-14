@@ -10,6 +10,9 @@
 
 .profile__caption {
   text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .profile__title {
@@ -45,5 +48,33 @@
     font-weight: bold;
     text-align: left;
     color: $color-black;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .profile {
+    display: flex;
+    width: 648px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .profile__item {
+    width: 323px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: flex-end;
+
+    &:first-child {
+      justify-content: flex-end;
+    }
+  }
+
+  .profile__caption {
+    font-size: 18px;
   }
 }

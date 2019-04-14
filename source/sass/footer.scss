@@ -8,3 +8,11 @@
   line-height: 26px;
   color: $color-black;
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

@@ -24,3 +24,29 @@
 .modal__button {
   margin-bottom: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .modal--wide {
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .modal__caption {
+    font-size: 30px;
+  }
+
+  .modal__button {
+    width: 272px;
+  }
+
+  .modal__button--wide {
+    width: 458px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+
+  .modal__text {
+    width: 277px;
+    margin: 39px auto;
+  }
+}
