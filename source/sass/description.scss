@@ -28,11 +28,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .description {
-    width: 428px;
-  }
-
-  .description__header {
+  .description__header--bigger {
     font-size: 30px;
   }
 }

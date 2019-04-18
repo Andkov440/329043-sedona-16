@@ -10,12 +10,14 @@
 .photo-list__caption {
   font-weight: bold;
   text-align: left;
+  margn: 0;
 }
 
 .photo-list__author {
   color: #333333;
   text-transform: none;
   text-align: left;
+  margin: 0;
 }
 
 .photo-list__like-count {
@@ -32,6 +34,11 @@
   }
 }
 
+.photo-list__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .photo-list__image {
   margin-top: 22px;
 }
@@ -40,15 +47,16 @@
   .photo-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     width: 648px;
     margin: 0 auto;
+    align-content: flex-start;
   }
 
   .photo-list__item {
     border: none;
     display: flex;
     flex-direction: column;
+    width: 324px;
 
     &:first-child {
       width: 648px;
@@ -72,14 +80,19 @@
 
 @media (min-width: $desktop-width) {
   .photo-list {
-    width: 1200px;
+    width: 100%;
+    justify-content: center;
   }
 
   .photo-list__wrapper {
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .photo-list__item:first-child {
-    width: 1200px;
+  .photo-list__item {
+    width: 400px;
+
+    &:first-child {
+      width: 100%;
+    }
   }
 }

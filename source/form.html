@@ -23,17 +23,30 @@
             <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
-        <button class="main-menu__toggle" type="button"></button>
+        <a class="main-menu__toggle">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+            <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+          </svg>
+        </a>
       </nav>
       <div class="logo header__logo">
         <a href="index.html">
-          <img class="logo__image" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта">
+          <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта">
+        </a>
+        <a class="main-menu__toggle">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+            <g>
+              <rect width="22.928" height="3.964"/>
+              <rect y="9.009" width="22.928" height="3.964"/>
+              <rect y="18.018" width="22.928" height="3.964"/>
+            </g>
+          </svg>
         </a>
       </div>
     </header>
     <main>
       <div class="promo">
-        <img class="promo__image promo__image--small" src="http://placehold.it/282x214" width="282" height="214" alt="Слоган">
+        <img class="promo__image promo__image--small" src="img/text-sedona-index.svg" width="282" height="214" alt="Слоган">
       </div>
       <section class="feedback">
         <div class="description">
@@ -41,47 +54,68 @@
           <p class="description__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="profile" name="profile" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="profile__item">
-            <legend class="profile__caption">Представьтесь</legend>
-            <label class="profile__title" for="username">Имя*:</label>
-            <input class="profile__field" type="text" name="username" id="name" placeholder="Петр" required>
-            <label class="profile__title" for="surname">Фамилия*:</label>
-            <input class="profile__field" type="text" name="suname" id="surname" placeholder="Иванов" required>
-            <label class="profile__title" for="patronymic">Отчество:</label>
-            <input class="profile__field" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+          <fieldset class="profile__item introduce">
+            <legend class="profile__caption introduce__caption">Представьтесь:</legend>
+            <label class="profile__title">Имя*:
+              <input class="profile__field" type="text" name="username" placeholder="Петр" required>
+            </label>
+            <label class="profile__title">Фамилия*:
+              <input class="profile__field" type="text" name="suname" placeholder="Иванов" required>
+            </label>
+            <label class="profile__title">Отчество:
+              <input class="profile__field" type="text" name="patronymic" placeholder="Александрович">
+            </label>
           </fieldset>
-          <fieldset class="profile__item">
-            <legend class="profile__caption">Контактная информация</legend>
-            <label class="profile__title" for="tel">Контактный телефон*:</label>
-            <input class="profile__field" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
-            <label class="profile__title" for="email">Электронная почта*:</label>
-            <input class="profile__field" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+          <fieldset class="profile__item contacts">
+            <legend class="profile__caption">Контактная информация:</legend>
+            <div class="contacts__wrapper">
+              <label class="profile__title contacts__title">
+                <p><span>Контактный</span> телефон*:</p>
+                <input class="profile__field contacts__field" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+              </label>
+              <label class="profile__title contacts__title">
+                <p>Электронная почта*:</p>
+                <input class="profile__field contacts__field" type="email" name="email" placeholder="Введите e-mail" required>
+              </label>
+            </div>
           </fieldset>
-          <fieldset class="profile__item">
+          <fieldset class="profile__item impression">
             <legend class="profile__caption">Ваше общее впечатление:</legend>
-            <input class="profile__radio" type="radio" name="impression" id="positive" value="positive" checked>
-            <label class="profile__title profile__title--black" for="positive">Скорее положительное</label>
-            <input class="profile__radio" type="radio" name="impression" id="negative" value="negative">
-            <label class="profile__title profile__title--black" for="negative">Скорее отрицательное</label>
-            <input class="profile__radio" type="radio" name="impression" id="difficult" value="difficult">
-            <label class="profile__title profile__title--black" for="difficult">Затрудняюсь ответить</label>
+            <label class="profile__title impression__title">
+              <input class="impression__radio" type="radio" name="impression" value="positive" checked>Скорее положительное
+            </label>
+            <label class="profile__title impression__title">
+              <input class="impression__radio" type="radio" name="impression" value="negative">Скорее отрицательное
+            </label>
+            <label class="profile__title impression__title">
+              <input class="impression__radio" type="radio" name="impression" value="difficult">Затрудняюсь ответить
+            </label>
           </fieldset>
-          <fieldset class="profile__item">
-            <legend class="profile__caption">Посещенные достопримечательности</legend>
-            <input class="profile__checkbox" type="checkbox" name="bridge" id="bridge" value="Мост Дьявола" checked>
-            <label class="profile__title profile__title--black" for="bridge">Мост Дьявола</label>
-            <input class="profile__checkbox" type="checkbox" name="bell" id="bell" value="Гора-Колокол" checked>
-            <label class="profile__title profile__title--black" for="bell">Гора-Колокол</label>
-            <input class="profile__checkbox" type="checkbox" name="park" id="park" value="Слайд-парк" checked>
-            <label class="profile__title profile__title--black" for="park">Слайд-парк</label>
-            <input class="profile__checkbox" type="checkbox" name="rock" id="rock" value="Красные скалы">
-            <label class="profile__title profile__title--black" for="rock">Красные скалы</label>
+          <fieldset class="profile__item sightseens">
+            <legend class="profile__caption sightseens__caption">Посещенные достопримечательности:</legend>
+            <div class="sightseens__wrapper">
+              <label class="sightseens__title profile__title">
+                <input class="sightseens__checkbox" type="checkbox" name="bridge" value="Мост Дьявола" checked>Мост Дьявола
+              </label>
+              <label class="sightseens__title profile__title">
+                <input class="sightseens__checkbox" type="checkbox" name="bell" value="Гора-Колокол" checked>Гора-Колокол
+              </label>
+              <label class="sightseens__title profile__title">
+                <input class="sightseens__checkbox" type="checkbox" name="park" value="Слайд-парк" checked>Слайд-парк
+              </label>
+              <label class="sightseens__title profile__title">
+                <input class="sightseens__checkbox" type="checkbox" name="rock" value="Красные скалы">Красные скалы
+              </label>
+            </div>
           </fieldset>
           <fieldset class="profile__item">
             <legend class="profile__caption">Опишите свои эмоции:</legend>
             <textarea class="profile__textarea" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <input class="profile__button button" type="submit" value="Отправить отзыв">
+          <div class="profile__submit">
+            <input class="profile__button button" type="submit" value="Отправить отзыв">
+            <p class="profile__required-fields"><sup>*</sup> - обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>
@@ -90,13 +124,29 @@
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+                  </g>
+                </g>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link" href="https://www.facebook.com/htmlacademy">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+                <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+                <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>

@@ -1,0 +1,32 @@
+.sightseens__checkbox {
+  display: none;
+}
+
+.sightseens__title {
+  font-weight: bold;
+  padding-top: 26px;
+  align-items: center;
+  text-transform: none;
+  font-size: 18px;
+  width: 220px;
+
+  &::before {
+    content: "";
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: $color-grey;
+    margin-right: 14px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .sightseens__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sightseens__caption {
+    width: 278px;
+  }
+}

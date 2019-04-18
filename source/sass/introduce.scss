@@ -1,0 +1,15 @@
+@media (min-width: $tablet-width) {
+  .introduce {
+    width: 323px;
+  }
+
+  .introduce__caption {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce {
+    width: 480px;
+  }
+}

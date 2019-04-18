@@ -1,0 +1,41 @@
+.contacts__title {
+  flex-direction: column;
+  align-items: flex-start;
+
+  p {
+    padding-left: 22px;
+    padding-bottom: 8px;
+  }
+}
+
+.contacts__field {
+  margin-left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__title {
+    flex-direction: row;
+    align-items: baseline;
+    width: 480px;
+
+    span {
+      display: none;
+    }
+  }
+
+  .contacts__field {
+    width: 257px;
+  }
+}

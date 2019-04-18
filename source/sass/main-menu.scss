@@ -4,12 +4,17 @@
 }
 
 .main-menu__toggle {
-  height: 22px;
-  width: 22px;
-  border: none;
-  background: url("../img/icon-cross.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+
+  polygon {
+    fill: #ffffff;
+  }
+
+  g {
+    fill: #81b3d2;
+  }
 }
 
 @media (min-width: $tablet-width) {

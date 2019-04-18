@@ -1,11 +1,15 @@
 .profile {
+  border-top: 1px solid #e5e5e5;
   line-height: 26px;
 }
 
 .profile__item {
   border: none;
+  padding: 0;
+  margin: 0;
   border-bottom: 1px solid #e5e5e5;
   margin-top: 24px;
+  width: 100%;
 }
 
 .profile__caption {
@@ -13,11 +17,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-}
-
-.profile__title {
-  font-size: 14px;
-  color: #333333;
+  position: relative;
 }
 
 .profile__field {
@@ -25,6 +25,8 @@
   background-color: $color-grey;
   height: 58px;
   margin-bottom: 20px;
+  margin-left: 16px;
+  width: 100%;
 
   &::placeholder {
     text-transform: none;
@@ -32,15 +34,27 @@
     font-weight: bold;
     text-align: left;
     color: $color-black;
+    padding-left: 22px;
   }
+}
+
+.profile__title {
+  font-size: 14px;
+  color: #333333;
+  width: 280px;
+  display: flex;
+  align-items: baseline;
+  margin: 0 auto;
 }
 
 .profile__textarea {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 279px;
+  width: 280px;
+  margin: 0 auto;
   height: 160px;
+  background-color: $color-grey;
+  border: none;
+  padding: 0;
 
   &::placeholder {
     text-transform: none;
@@ -48,7 +62,18 @@
     font-weight: bold;
     text-align: left;
     color: $color-black;
+    padding-left: 21px;
+    padding-top: 22px;
   }
+}
+
+.profile__button {
+  width: 280px;
+}
+
+.profile__required-fields {
+  display: none;
+  font-size: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,24 +82,48 @@
     width: 648px;
     margin: 0 auto;
     flex-wrap: wrap;
+    border-top: none;
   }
 
   .profile__item {
-    width: 323px;
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
     margin-right: 0;
-    display: flex;
-    flex-direction: flex-end;
-    justify-content: flex-end;
-
-    &:first-child {
-      justify-content: flex-end;
-    }
+    border-bottom: none;
   }
 
   .profile__caption {
-    font-size: 18px;
+    font-size: 21px;
+  }
+
+  .profile__textarea {
+    width: 100%;
+  }
+
+  .profile__submit {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile__required-fields {
+    display: block;
+  }
+
+  .profile__button {
+    margin: 0;
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    width: 960px;
+  }
+
+  .profile__button {
+    width: 480px;
   }
 }
