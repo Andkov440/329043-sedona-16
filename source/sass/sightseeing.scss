@@ -1,8 +1,5 @@
-.sightseens__checkbox {
-  display: none;
-}
 
-.sightseens__title {
+.profile__title--sightseeing {
   font-weight: bold;
   padding-top: 26px;
   align-items: center;
@@ -21,12 +18,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .sightseens__wrapper {
+  .profile__wrapper--sightseeing {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .sightseens__caption {
+  .profile__caption--sightseeing {
     width: 278px;
   }
 }

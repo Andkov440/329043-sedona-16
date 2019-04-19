@@ -23,24 +23,15 @@
             <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
-        <a class="main-menu__toggle">
+        <button class="main-menu__toggle">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
             <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
           </svg>
-        </a>
+        </button>
       </nav>
       <div class="logo header__logo">
         <a href="index.html">
           <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта">
-        </a>
-        <a class="main-menu__toggle">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-            <g>
-              <rect width="22.928" height="3.964"/>
-              <rect y="9.009" width="22.928" height="3.964"/>
-              <rect y="18.018" width="22.928" height="3.964"/>
-            </g>
-          </svg>
         </a>
       </div>
     </header>
@@ -54,8 +45,8 @@
           <p class="description__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="profile" name="profile" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="profile__item introduce">
-            <legend class="profile__caption introduce__caption">Представьтесь:</legend>
+          <fieldset class="profile__item profile__item--introduсtion">
+            <legend class="profile__caption profile__caption--introduсtion">Представьтесь:</legend>
             <label class="profile__title">Имя*:
               <input class="profile__field" type="text" name="username" placeholder="Петр" required>
             </label>
@@ -66,45 +57,45 @@
               <input class="profile__field" type="text" name="patronymic" placeholder="Александрович">
             </label>
           </fieldset>
-          <fieldset class="profile__item contacts">
+          <fieldset class="profile__item">
             <legend class="profile__caption">Контактная информация:</legend>
-            <div class="contacts__wrapper">
-              <label class="profile__title contacts__title">
-                <p><span>Контактный</span> телефон*:</p>
-                <input class="profile__field contacts__field" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+            <div class="profile__wrapper--contacts">
+              <label class="profile__title profile__title--contacts">
+                <p class="profile__name"><span class="profile__hide">Контактный</span> телефон*:</p>
+                <input class="profile__field profile__field--contacts" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
               </label>
-              <label class="profile__title contacts__title">
-                <p>Электронная почта*:</p>
-                <input class="profile__field contacts__field" type="email" name="email" placeholder="Введите e-mail" required>
+              <label class="profile__title profile__title--contacts">
+                <p class="profile__name">Электронная почта*:</p>
+                <input class="profile__field profile__field--contacts" type="email" name="email" placeholder="Введите e-mail" required>
               </label>
             </div>
           </fieldset>
-          <fieldset class="profile__item impression">
+          <fieldset class="profile__item profile__item--impression">
             <legend class="profile__caption">Ваше общее впечатление:</legend>
-            <label class="profile__title impression__title">
-              <input class="impression__radio" type="radio" name="impression" value="positive" checked>Скорее положительное
+            <label class="profile__title profile__title--impression">
+              <input class="radio" type="radio" name="impression" value="positive" checked>Скорее положительное
             </label>
-            <label class="profile__title impression__title">
-              <input class="impression__radio" type="radio" name="impression" value="negative">Скорее отрицательное
+            <label class="profile__title profile__title--impression">
+              <input class="radio" type="radio" name="impression" value="negative">Скорее отрицательное
             </label>
-            <label class="profile__title impression__title">
-              <input class="impression__radio" type="radio" name="impression" value="difficult">Затрудняюсь ответить
+            <label class="profile__title profile__title--impression">
+              <input class="radio" type="radio" name="impression" value="difficult">Затрудняюсь ответить
             </label>
           </fieldset>
-          <fieldset class="profile__item sightseens">
-            <legend class="profile__caption sightseens__caption">Посещенные достопримечательности:</legend>
-            <div class="sightseens__wrapper">
-              <label class="sightseens__title profile__title">
-                <input class="sightseens__checkbox" type="checkbox" name="bridge" value="Мост Дьявола" checked>Мост Дьявола
+          <fieldset class="profile__item profile__item--sightseeing">
+            <legend class="profile__caption profile__caption--sightseeing">Посещенные достопримечательности:</legend>
+            <div class="profile__wrapper--sightseeing">
+              <label class="profile__title profile__title--sightseeing ">
+                <input class="checkbox" type="checkbox" name="bridge" value="Devil's Bridge" checked>Мост Дьявола
               </label>
-              <label class="sightseens__title profile__title">
-                <input class="sightseens__checkbox" type="checkbox" name="bell" value="Гора-Колокол" checked>Гора-Колокол
+              <label class="profile__title profile__title--sightseeing">
+                <input class="checkbox" type="checkbox" name="bell" value="Mountain Bell" checked>Гора-Колокол
               </label>
-              <label class="sightseens__title profile__title">
-                <input class="sightseens__checkbox" type="checkbox" name="park" value="Слайд-парк" checked>Слайд-парк
+              <label class="profile__title profile__title--sightseeing">
+                <input class="checkbox" type="checkbox" name="park" value="Slide park" checked>Слайд-парк
               </label>
-              <label class="sightseens__title profile__title">
-                <input class="sightseens__checkbox" type="checkbox" name="rock" value="Красные скалы">Красные скалы
+              <label class="profile__title profile__title--sightseeing">
+                <input class="checkbox" type="checkbox" name="rock" value="Red rocks">Красные скалы
               </label>
             </div>
           </fieldset>

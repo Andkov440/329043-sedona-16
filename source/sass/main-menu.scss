@@ -4,17 +4,12 @@
 }
 
 .main-menu__toggle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
   position: absolute;
   top: 17px;
   right: 20px;
-
-  polygon {
-    fill: #ffffff;
-  }
-
-  g {
-    fill: #81b3d2;
-  }
 }
 
 @media (min-width: $tablet-width) {

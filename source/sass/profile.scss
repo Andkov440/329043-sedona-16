@@ -6,9 +6,8 @@
 .profile__item {
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 24px 0 0 0;
   border-bottom: 1px solid #e5e5e5;
-  margin-top: 24px;
   width: 100%;
 }
 
@@ -38,6 +37,10 @@
   }
 }
 
+.profile__field--contacts {
+  margin-left: 0;
+}
+
 .profile__title {
   font-size: 14px;
   color: #333333;
@@ -45,6 +48,52 @@
   display: flex;
   align-items: baseline;
   margin: 0 auto;
+}
+
+.profile__title--contacts {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile__title--impression {
+  font-weight: bold;
+  padding-top: 26px;
+  align-items: center;
+  text-transform: none;
+  font-size: 18px;
+
+  &::before {
+    content: "";
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    border: 18px solid $color-grey;
+    background-color: $color-grey;
+    margin-right: 14px;
+  }
+}
+
+.profile__title--sightseeing {
+  font-weight: bold;
+  padding-top: 26px;
+  align-items: center;
+  text-transform: none;
+  font-size: 18px;
+  width: 220px;
+
+  &::before {
+    content: "";
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: $color-grey;
+    margin-right: 14px;
+  }
+}
+
+.profile__name {
+  padding-left: 22px;
+  padding-bottom: 8px;
 }
 
 .profile__textarea {
@@ -116,6 +165,39 @@
     margin: 0;
     width: 324px;
   }
+
+  .profile__item--introduсtion {
+    width: 323px;
+  }
+
+  .profile__caption--introduсtion {
+    text-align: left;
+  }
+
+  .profile__wrapper--contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .profile__title--contacts {
+    width: 100%;
+  }
+
+  .profile__item--impression {
+    order: -1;
+    width: 323px;
+  }
+
+  .profile__wrapper--sightseeing {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .profile__caption--sightseeing {
+    width: 278px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -124,6 +206,34 @@
   }
 
   .profile__button {
+    width: 480px;
+  }
+
+  .profile__item--introduсtion {
+    width: 480px;
+  }
+
+  .profile__hide {
+    display: none;
+  }
+
+  .profile__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile__title--contacts {
+    flex-direction: row;
+    align-items: baseline;
+    width: 480px;
+  }
+
+  .profile__field--contacts {
+    width: 257px;
+  }
+
+  .profile__item--impression {
     width: 480px;
   }
 }
