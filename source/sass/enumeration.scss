@@ -16,3 +16,29 @@
   line-height: 21px;
   color: #333333;
 }
+
+@media (min-width: $tablet-width) {
+  .enumeration {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .enumeration__item {
+    width: 165px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .enumeration__header {
+    font-size: 21px;
+  }
+
+  .enumeration__item {
+    width: 283px;
+
+    &:nth-child(2) {
+      order: 1;
+    }
+  }
+}

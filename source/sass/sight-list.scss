@@ -7,6 +7,13 @@
 
 .sight-list__item {
   padding: 18px 0;
+  width: 280px;
+  margin: 0 auto;
+  border-bottom: 1px solid #d6d6d6;
+
+  &:last-child {
+    border: none;
+  }
 }
 
 .sight-list__header {
@@ -20,4 +27,31 @@
   font-size: 14px;
   color: #333333;
   line-height: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .sight-list {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .sight-list__item {
+    width: 160px;
+  }
+
+  .sight-list__header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sight-list__header {
+    font-size: 21px;
+  }
+
+  .sight-list__item {
+    width: 284px;
+  }
 }

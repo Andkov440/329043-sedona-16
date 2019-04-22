@@ -16,6 +16,46 @@
   line-height: 21px;
 }
 
-.reason-item__image {
-  margin-top: 31px;
+@media (min-width: $tablet-width) {
+  .reason-item {
+    display: flex;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .reason-item__image {
+    width: 512px;
+  }
+
+  .reason-item__wrapper {
+    margin: 0 auto;
+    width: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason-item__image {
+    width: 800px;
+  }
+
+  .reason-item__wrapper {
+    width: 400px;
+  }
+
+  .reason-item__header {
+    padding-left: 136px;
+    padding-right: 135px;
+  }
+
+  .reason-item__text {
+    padding-left: 67px;
+    padding-right: 67px;
+
+    &--reverse {
+      padding-left: 90px;
+      padding-right: 90px;
+    }
+  }
 }

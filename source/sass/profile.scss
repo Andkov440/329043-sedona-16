@@ -1,20 +1,22 @@
 .profile {
+  border-top: 1px solid #e5e5e5;
   line-height: 26px;
 }
 
 .profile__item {
   border: none;
+  padding: 0;
+  margin: 24px 0 0 0;
   border-bottom: 1px solid #e5e5e5;
-  margin-top: 24px;
+  width: 100%;
 }
 
 .profile__caption {
   text-align: center;
-}
-
-.profile__title {
-  font-size: 14px;
-  color: #333333;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  position: relative;
 }
 
 .profile__field {
@@ -22,6 +24,8 @@
   background-color: $color-grey;
   height: 58px;
   margin-bottom: 20px;
+  margin-left: 16px;
+  width: 100%;
 
   &::placeholder {
     text-transform: none;
@@ -29,15 +33,77 @@
     font-weight: bold;
     text-align: left;
     color: $color-black;
+    padding-left: 22px;
   }
+
+  &--contacts {
+    margin-left: 0;
+  }
+}
+
+.profile__title {
+  font-size: 14px;
+  color: #333333;
+  width: 280px;
+  display: flex;
+  align-items: baseline;
+  margin: 0 auto;
+
+  &--contacts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &--impression {
+    font-weight: bold;
+    padding-top: 26px;
+    align-items: center;
+    text-transform: none;
+    font-size: 18px;
+
+    &::before {
+      content: "";
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      border: 18px solid $color-grey;
+      background-color: $color-grey;
+      margin-right: 14px;
+    }
+  }
+
+  &--sightseeing {
+    font-weight: bold;
+    padding-top: 26px;
+    align-items: center;
+    text-transform: none;
+    font-size: 18px;
+    width: 220px;
+
+    &::before {
+      content: "";
+      width: 56px;
+      height: 56px;
+      border-radius: 5px;
+      background-color: $color-grey;
+      margin-right: 14px;
+    }
+  }
+}
+
+.profile__name {
+  padding-left: 22px;
+  padding-bottom: 8px;
 }
 
 .profile__textarea {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 279px;
+  width: 280px;
+  margin: 0 auto;
   height: 160px;
+  background-color: $color-grey;
+  border: none;
+  padding: 0;
 
   &::placeholder {
     text-transform: none;
@@ -45,5 +111,162 @@
     font-weight: bold;
     text-align: left;
     color: $color-black;
+    padding-left: 21px;
+    padding-top: 22px;
+  }
+}
+
+.profile__button {
+  width: 280px;
+}
+
+.profile__required-fields {
+  display: none;
+  font-size: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .profile {
+    display: flex;
+    width: 648px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    border-top: none;
+  }
+
+  .profile__item {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: none;
+
+    &--introduсtion {
+      width: 323px;
+    }
+
+    &--impression {
+      order: -1;
+      width: 323px;
+    }
+  }
+
+  .profile__caption {
+    font-size: 21px;
+
+    &--introduсtion {
+      text-align: left;
+      margin-left: 20px;
+    }
+
+    &--sightseeing {
+      width: 278px;
+    }
+  }
+
+  .profile__textarea {
+    width: 100%;
+  }
+
+  .profile__submit {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile__required-fields {
+    display: block;
+  }
+
+  .profile__button {
+    margin: 0;
+    width: 324px;
+  }
+
+  .profile__wrapper {
+    display: flex;
+
+    &--sightseeing {
+      flex-wrap: wrap;
+    }
+
+    &--contacts {
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  .profile__title--contacts {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    width: 960px;
+  }
+
+  .profile__button {
+    width: 480px;
+  }
+
+  .profile__item--introduсtion {
+    width: 480px;
+  }
+
+  .profile__hide {
+    display: none;
+  }
+
+  .profile__wrapper {
+    width: 100%;
+    justify-content: space-between;
+
+    &--contacts {
+      flex-direction: row;
+    }
+
+    &--impression {
+      flex-direction: column;
+    }
+
+    &--introduсtion {
+      flex-direction: column;
+    }
+  }
+
+  .profile__title {
+    &--contacts {
+      flex-direction: row;
+      align-items: baseline;
+      width: 480px;
+    }
+
+    &--impression {
+      margin-left: 0;
+    }
+
+    &--introduсtion {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  .profile__field {
+    &--contacts {
+      width: 257px;
+    }
+  }
+
+  .profile__item--impression {
+    width: 480px;
+  }
+
+  .profile__caption {
+    &--introduсtion {
+      margin-left: 0;
+    }
   }
 }

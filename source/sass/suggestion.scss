@@ -15,3 +15,24 @@
   color: #333333;
   margin-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .suggestion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .suggestion__caption {
+    font-size: 30px;
+  }
+
+  .suggestion__wrapper {
+    width: 434px;
+  }
+
+  .suggestion__button {
+    width: 458px;
+  }
+}

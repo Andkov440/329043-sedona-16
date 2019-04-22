@@ -3,9 +3,8 @@
 }
 
 .player__control {
-  margin-left: auto;
-  margin-right: auto;
-  //margin-top: -45px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .player__tools {
@@ -14,7 +13,6 @@
 
 .player__scroll {
   background-color: rgba(0, 0, 0, 0.6);
-  width: 280px;
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0 auto;
@@ -31,4 +29,22 @@
   height: 10px;
   border-radius: 50%;
   background-color: $color-white;
+}
+
+@media (min-width: $tablet-width) {
+  .player {
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .player__control {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .player {
+    width: 800px;
+    margin: 0 auto;
+  }
 }
