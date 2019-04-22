@@ -2,7 +2,6 @@
   height: 389px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  /*margin-top: -30px;*/
   text-align: center;
 }
 
@@ -13,7 +12,6 @@
 @media (min-width: $tablet-width) {
   .promo {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 }

@@ -41,25 +41,27 @@
       </div>
       <section class="feedback">
         <div class="description">
-          <h2 class="description__header">Оставьте свой отзыв</h2>
+          <h2 class="description__header description__header--bigger">Оставьте свой отзыв</h2>
           <p class="description__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="profile" name="profile" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="profile__item profile__item--introduсtion">
             <legend class="profile__caption profile__caption--introduсtion">Представьтесь:</legend>
-            <label class="profile__title">Имя*:
-              <input class="profile__field" type="text" name="username" placeholder="Петр" required>
-            </label>
-            <label class="profile__title">Фамилия*:
-              <input class="profile__field" type="text" name="suname" placeholder="Иванов" required>
-            </label>
-            <label class="profile__title">Отчество:
-              <input class="profile__field" type="text" name="patronymic" placeholder="Александрович">
-            </label>
+            <div class="profile__wrapper profile__wrapper--introduсtion">
+              <label class="profile__title profile__title--introduсtion">Имя*:
+                <input class="profile__field profile__field--introduсtion" type="text" name="username" placeholder="Петр" required>
+              </label>
+              <label class="profile__title profile__title--introduсtion">Фамилия*:
+                <input class="profile__field profile__field--introduсtion" type="text" name="suname" placeholder="Иванов" required>
+              </label>
+              <label class="profile__title profile__title--introduсtion">Отчество:
+                <input class="profile__field profile__field--introduсtion" type="text" name="patronymic" placeholder="Александрович">
+              </label>
+            </div>
           </fieldset>
           <fieldset class="profile__item">
             <legend class="profile__caption">Контактная информация:</legend>
-            <div class="profile__wrapper--contacts">
+            <div class="profile__wrapper profile__wrapper--contacts">
               <label class="profile__title profile__title--contacts">
                 <p class="profile__name"><span class="profile__hide">Контактный</span> телефон*:</p>
                 <input class="profile__field profile__field--contacts" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
@@ -72,19 +74,21 @@
           </fieldset>
           <fieldset class="profile__item profile__item--impression">
             <legend class="profile__caption">Ваше общее впечатление:</legend>
-            <label class="profile__title profile__title--impression">
-              <input class="radio" type="radio" name="impression" value="positive" checked>Скорее положительное
-            </label>
-            <label class="profile__title profile__title--impression">
-              <input class="radio" type="radio" name="impression" value="negative">Скорее отрицательное
-            </label>
-            <label class="profile__title profile__title--impression">
-              <input class="radio" type="radio" name="impression" value="difficult">Затрудняюсь ответить
-            </label>
+            <div class="profile__wrapper profile__wrapper--impression">
+              <label class="profile__title profile__title--impression">
+                <input class="radio" type="radio" name="impression" value="positive" checked>Скорее положительное
+              </label>
+              <label class="profile__title profile__title--impression">
+                <input class="radio" type="radio" name="impression" value="negative">Скорее отрицательное
+              </label>
+              <label class="profile__title profile__title--impression">
+                <input class="radio" type="radio" name="impression" value="difficult">Затрудняюсь ответить
+              </label>
+            </div>
           </fieldset>
           <fieldset class="profile__item profile__item--sightseeing">
             <legend class="profile__caption profile__caption--sightseeing">Посещенные достопримечательности:</legend>
-            <div class="profile__wrapper--sightseeing">
+            <div class="profile__wrapper profile__wrapper--sightseeing">
               <label class="profile__title profile__title--sightseeing ">
                 <input class="checkbox" type="checkbox" name="bridge" value="Devil's Bridge" checked>Мост Дьявола
               </label>
