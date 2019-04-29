@@ -1,3 +1,42 @@
 .radio {
   display: none;
 }
+
+.radio__text {
+  font-size: 18px;
+  color: #333333;
+  font-weight: bold;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  padding-left: 78px;
+  text-transform: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: 11px;
+    left: 0;
+    border-radius: 50%;
+    border: 18px solid $color-grey;
+    background-color: $color-grey;
+    margin-right: 14px;
+  }
+}
+
+.radio:checked + .radio__text::before {
+  background-color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .radio__text {
+    padding-top: 24px;
+    padding-bottom: 28px;
+    padding-left: 75px;
+
+    &::before {
+      top: 9px;
+    }
+  }
+}

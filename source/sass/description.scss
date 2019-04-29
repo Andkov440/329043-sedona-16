@@ -1,34 +1,97 @@
 .description {
+  width: 255px;
   text-align: center;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--photo {
+    width: 275px;
+  }
+
+  &--form {
+    width: 275px;
+  }
 }
 
 .description__header {
   font-size: 18px;
   font-weight: bold;
   color: $color-black;
-  margin-top: 43px;
+  margin-top: 40px;
+  margin-bottom: 29px;
   line-height: 26px;
+
+  &--photo {
+    margin-bottom: 26px;
+  }
+
+  &--form {
+    margin-bottom: 26px;
+  }
 }
 
 .description__text {
   color: #333333;
   font-size: 14px;
   line-height: 24px;
+  margin-bottom: 45px;
+
+  &--photo {
+    margin-bottom: 26px;
+  }
+
+  &--form {
+    margin-bottom: 16px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .description {
     width: 490px;
+
+    &--photo {
+      width: 440px;
+    }
+
+    &--form {
+      width: 437px;
+    }
   }
 
   .description__header {
     font-size: 21px;
+
+    &--photo {
+      font-size: 30px;
+      margin-bottom: 26px;
+    }
+
+    &--form {
+      font-size: 30px;
+    }
+  }
+
+  .description__text {
+    margin-top: 31px;
+    margin-bottom: 51px;
+
+    &--photo {
+      margin-top: 32px;
+      margin-bottom: 68px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .description__header--bigger {
-    font-size: 30px;
+  .description__header {
+    &--form {
+      margin-top: 111px;
+    }
+  }
+
+  .description__text {
+    &--form {
+      margin-bottom: 0;
+    }
   }
 }

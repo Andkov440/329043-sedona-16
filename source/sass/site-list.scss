@@ -1,12 +1,11 @@
 .site-list {
   list-style: none;
   text-align: center;
-  /*position: relative;*/
 }
 
 .site-list__link {
   display: block;
-  padding: 8px 18px;
+  padding: 7px 18px;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -48,7 +47,7 @@
     color: $color-black;
     background: none;
     border: none;
-    padding-top: 16px;
+    padding-top: 14px;
     padding-bottom: 15px;
 
     &:visited {

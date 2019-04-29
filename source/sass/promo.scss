@@ -3,6 +3,10 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   text-align: center;
+
+  &--small {
+    height: 156px;
+  }
 }
 
 .promo__image {
@@ -13,5 +17,16 @@
   .promo {
     width: 100%;
     margin: 0 auto;
+    height: 518px;
+
+    &--small {
+      height: 292px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    height: 303px;
   }
 }

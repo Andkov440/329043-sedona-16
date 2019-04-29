@@ -2,17 +2,45 @@
   text-align: center;
 }
 
+.footer__social {
+  margin-bottom: 37px;
+}
+
 .footer__hashtag {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
   color: $color-black;
+  margin-top: 30px;
+  margin-bottom: 38px;
+
+  &--photo {
+    margin-top: 137px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+  }
+
+  .footer__social {
+    margin: 32px 115px;
+
+    &--photo {
+      margin: 0 115px;
+    }
+  }
+
+  .footer__hashtag {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__social {
+    margin: 0 274px;
   }
 }

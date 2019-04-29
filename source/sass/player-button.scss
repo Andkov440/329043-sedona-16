@@ -1,0 +1,53 @@
+.player-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 17px 0;
+
+  &__repeat {
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/icon-video-replay.svg");
+    background-color: transparent;
+    margin-left: 21px;
+  }
+
+  &__subtitles {
+    width: 32px;
+    height: 20px;
+    background-image: url("../img/icon-video-subtitles.svg");
+    background-color: transparent;
+    margin-left: 130px;
+  }
+
+  &__fullscreen {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon-video-fullscreen.svg");
+    background-color: transparent;
+    margin-left: 31px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .player-button {
+    &__repeat {
+      margin-left: 31px;
+    }
+
+    &__subtitles {
+      margin-left: 470px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .player-button {
+    &__subtitles {
+      margin-left: 620px;
+    }
+  }
+}

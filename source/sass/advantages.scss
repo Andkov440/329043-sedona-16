@@ -1,7 +1,28 @@
-.advantages__list {
-  margin: 41px 0;
-}
-
 .advantages__items {
   margin: 0;
+}
+
+.advantages__description {
+  margin-bottom: 26px;
+}
+
+.advantages__list {
+  margin-bottom: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    margin-top: 5px;
+  }
+
+  .advantages__description {
+    margin-bottom: 26px;
+    margin-top: 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description {
+    margin-top: 50px;
+  }
 }

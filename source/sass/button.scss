@@ -16,3 +16,15 @@
     width: 180px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button__text {
+    padding-right: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button__text {
+    padding-right: 0;
+  }
+}
