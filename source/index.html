@@ -11,7 +11,7 @@
       <nav class="main-menu">
         <ul class="main-menu__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link">Главная</a>
+            <a class="site-list__link site-list__link--active">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фото и видео</a>
@@ -20,7 +20,7 @@
             <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="site-list__link site-list__link--shadow" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
         <button class="main-menu__toggle main-menu__toggle--closed main-menu__toggle--nojs"></button>
@@ -32,12 +32,12 @@
       </div>
     </header>
     <main class="main">
-      <div class="promo">
+      <div class="promo promo--big">
         <img class="promo__image" src="img/text-sedona-index.svg" width="282" height="214" alt="Слоган">
       </div>
       <section class="advantages">
         <div class="advantages__description description">
-          <h2 class="description__header">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="description__header">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="description__text">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
         </div>
         <div class="advantages__reasons reason-item">
@@ -93,7 +93,9 @@
           <h2 class="suggestion__caption">Заинтересовались?</h2>
           <p class="suggestion__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
-        <a class="suggestion__button button" href="#">Найти гостиницу</a>
+        <button class="suggestion__button button" href="#"тз>
+          <span class="button__text">Найти гостиницу</span>
+        </button>
       </div>
       <div class="map main__map">
         <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
@@ -139,6 +141,6 @@
         </a>
       </div>
     </footer>
-    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

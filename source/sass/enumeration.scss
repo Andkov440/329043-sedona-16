@@ -3,13 +3,18 @@
   padding-left: 0;
   text-align: left;
   width: 320px;
-  padding-top: 13px;
+  padding-top: 29px;
+  margin: 0 auto;
 }
 
 .enumeration__item {
   position: relative;
   padding-left: 70px;
   padding-right: 42px;
+
+  &:last-child {
+    padding-bottom: 8px;
+  }
 
   &::before {
     content: "";
@@ -59,6 +64,7 @@
     justify-content: space-between;
     width: 671px;
     margin: 0 auto;
+    padding-top: 14px;
   }
 
   .enumeration__header {
@@ -73,6 +79,10 @@
 
     &--souvenir {
       order: 1;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
     }
 
     &::before {
@@ -91,6 +101,7 @@
 @media (min-width: $desktop-width) {
   .enumeration {
     width: 1085px;
+    padding-top: 16px;
   }
 
   .enumeration__item {

@@ -38,12 +38,12 @@
 }
 
 .profile__field {
-  border: none;
-  background-color: $color-grey;
-  height: 56px;
+  height: 48px;
   margin-bottom: 21px;
   margin-left: 16px;
   width: 100%;
+  border: 4px solid $color-grey;
+  background-color: $color-grey;
 
   &::placeholder {
     text-transform: none;
@@ -51,7 +51,17 @@
     font-weight: bold;
     text-align: left;
     color: $color-black;
-    padding-left: 22px;
+    padding-left: 17px;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+
+  &:active {
+    background-color: $color-white;
+    border: 4px solid #e5e5e5;
   }
 
   &--contacts {

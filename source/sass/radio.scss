@@ -23,10 +23,24 @@
     background-color: $color-grey;
     margin-right: 14px;
   }
+
+  &:hover::before {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    border-color: #d5d5d5;
+    background-color: #d5d5d5;
+  }
 }
 
 .radio:checked + .radio__text::before {
   background-color: #333333;
+}
+
+.radio:checked:active + .radio__text:active::before {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -38,5 +52,11 @@
     &::before {
       top: 9px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio__text {
+    padding-left: 78px;
   }
 }

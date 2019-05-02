@@ -3,6 +3,8 @@
   text-align: center;
   background-color: $color-grey;
   padding-left: 0;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .sight-list__item {
@@ -40,7 +42,8 @@
     display: flex;
     text-align: center;
     justify-content: space-around;
-    padding-top: 12px;
+    padding-top: 17px;
+    width: 768px;
   }
 
   .sight-list__item {
@@ -64,6 +67,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .sight-list {
+    width: 1200px;
+    padding-top: 10px;
+  }
+
   .sight-list__header {
     font-size: 21px;
     width: 138px;

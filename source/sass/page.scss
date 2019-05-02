@@ -4,18 +4,6 @@
   min-width: 320px;
 }
 
-@media (min-width: $tablet-width) {
-  .page__footer {
-    margin-top: 168px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page__footer {
-    margin-top: 214px;
-  }
-}
-
 img {
   max-width: 100%;
   height: auto;

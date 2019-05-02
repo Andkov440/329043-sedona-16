@@ -7,7 +7,7 @@
   background-position: center;
   padding: 17px 0;
 
-  &__repeat {
+  &--repeat {
     width: 23px;
     height: 23px;
     background-image: url("../img/icon-video-replay.svg");
@@ -15,7 +15,7 @@
     margin-left: 21px;
   }
 
-  &__subtitles {
+  &--subtitles {
     width: 32px;
     height: 20px;
     background-image: url("../img/icon-video-subtitles.svg");
@@ -23,7 +23,7 @@
     margin-left: 130px;
   }
 
-  &__fullscreen {
+  &--fullscreen {
     width: 20px;
     height: 20px;
     background-image: url("../img/icon-video-fullscreen.svg");
@@ -34,11 +34,11 @@
 
 @media (min-width: $tablet-width) {
   .player-button {
-    &__repeat {
+    &--repeat {
       margin-left: 31px;
     }
 
-    &__subtitles {
+    &--subtitles {
       margin-left: 470px;
     }
   }
@@ -46,7 +46,7 @@
 
 @media (min-width: $desktop-width) {
   .player-button {
-    &__subtitles {
+    &--subtitles {
       margin-left: 620px;
     }
   }

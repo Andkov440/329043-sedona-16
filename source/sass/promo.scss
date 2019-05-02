@@ -1,4 +1,6 @@
 .promo {
+  width: 320px;
+  margin: 0 auto;
   height: 389px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -15,9 +17,8 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    width: 100%;
+    width: $tablet-width;
     margin: 0 auto;
-    height: 518px;
 
     &--small {
       height: 292px;
@@ -27,6 +28,15 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    height: 303px;
+    width: $desktop-width;
+    margin: 0 auto;
+
+    &--big {
+      height: 518px;
+    }
+
+    &--small {
+      height: 301px;
+    }
   }
 }

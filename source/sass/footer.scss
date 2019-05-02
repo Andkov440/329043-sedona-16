@@ -24,6 +24,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: $tablet-width;
+    margin: 0 auto;
+
+    &--big {
+      padding-top: 168px;
+    }
   }
 
   .footer__social {
@@ -40,6 +46,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .footer {
+    width: $desktop-width;
+    padding-top: 30px;
+
+    &--big {
+      padding-top: 214px;
+    }
+  }
+
   .footer__social {
     margin: 0 274px;
   }
