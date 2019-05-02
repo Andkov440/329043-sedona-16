@@ -1,8 +1,14 @@
 .promo {
+  width: 320px;
+  margin: 0 auto;
   height: 389px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   text-align: center;
+
+  &--small {
+    height: 156px;
+  }
 }
 
 .promo__image {
@@ -11,7 +17,26 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    width: 100%;
+    width: $tablet-width;
     margin: 0 auto;
+
+    &--small {
+      height: 292px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: $desktop-width;
+    margin: 0 auto;
+
+    &--big {
+      height: 518px;
+    }
+
+    &--small {
+      height: 301px;
+    }
   }
 }

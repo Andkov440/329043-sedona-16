@@ -1,5 +1,12 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 26px;
   color: $color-black;
+  padding-right: 14px;
 }
