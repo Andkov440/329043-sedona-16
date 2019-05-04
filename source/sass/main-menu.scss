@@ -1,3 +1,9 @@
+.main-menu {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .main-menu__list {
   margin: 0;
   padding: 0;
@@ -37,7 +43,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-menu {
+    width: $tablet-width;
+  }
+
   .main-menu__toggle {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu {
+    width: $desktop-width;
   }
 }

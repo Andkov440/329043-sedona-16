@@ -29,6 +29,10 @@
   margin-bottom: 34px;
 }
 
+.suggestion__skip {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .suggestion {
     display: flex;
@@ -56,7 +60,7 @@
   }
 
   .suggestion__wrapper {
-    width: 434px;
+    width: 435px;
   }
 
   .suggestion__button {
@@ -65,10 +69,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .suggestion__wrapper {
-    width: 434px;
-  }
-
   .suggestion__caption {
     &--photo {
       margin-top: 71px;
