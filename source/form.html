@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона. Форма отзыва</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.js"></script>
   </head>
   <body class="page">
     <header class="header">
@@ -25,16 +26,18 @@
         </ul>
         <button class="main-menu__toggle main-menu__toggle--closed main-menu__toggle--nojs"></button>
       </nav>
-      <div class="logo header__logo">
-        <a href="index.html">
-          <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта">
+      <div class="logo">
+        <a>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" alt="Логотип сайта">
+          </picture>
         </a>
       </div>
     </header>
     <main>
-      <div class="promo promo--small">
-        <img class="promo__image" src="img/text-sedona-index.svg" width="282" height="214" alt="Слоган">
-      </div>
+      <div class="promo promo--small"></div>
       <section class="feedback">
         <div class="feedback__description description description--form">
           <h2 class="description__header description__header--form">Оставьте свой отзыв</h2>
@@ -59,14 +62,14 @@
             <legend class="profile__caption profile__caption--contacts">Контактная информация:</legend>
             <div class="profile__wrapper profile__wrapper--contacts">
               <label class="profile__title profile__title--contacts">
-                <p class="profile__name profile__name--contacts"><span class="profile__hide">Контактный</span> телефон*:</p>
+                <span class="profile__name profile__name--contacts"><span class="profile__hide">Контактный</span> телефон*:</span>
                 <input class="profile__field profile__field--contacts" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
-                <div class="profile__icon profile__icon--phone"></div>
+                <span class="profile__icon profile__icon--phone"></span>
               </label>
               <label class="profile__title profile__title--contacts">
-                <p class="profile__name profile__name--contacts">Электронная почта*:</p>
+                <span class="profile__name profile__name--contacts">Электронная почта*:</span>
                 <input class="profile__field profile__field--contacts" type="email" name="email" placeholder="Введите e-mail" required>
-                <div class="profile__icon profile__icon--mail"></div>
+                <span class="profile__icon profile__icon--mail"></span>
               </label>
             </div>
           </fieldset>
@@ -75,15 +78,15 @@
             <div class="profile__wrapper profile__wrapper--impression">
               <label class="profile__title profile__title--impression">
                 <input class="radio" type="radio" name="impression" value="positive" checked>
-                <div class="radio__text">Скорее положительное</div>
+                <span class="radio__text">Скорее положительное</span>
               </label>
               <label class="profile__title profile__title--impression">
                 <input class="radio" type="radio" name="impression" value="negative">
-                <div class="radio__text">Скорее отрицательное</div>
+                <span class="radio__text">Скорее отрицательное</span>
               </label>
               <label class="profile__title profile__title--impression">
                 <input class="radio" type="radio" name="impression" value="difficult">
-                <div class="radio__text">Затрудняюсь ответить</div>
+                <span class="radio__text">Затрудняюсь ответить</span>
               </label>
             </div>
           </fieldset>
@@ -92,19 +95,19 @@
             <div class="profile__wrapper profile__wrapper--sightseeing">
               <label class="profile__title profile__title--sightseeing ">
                 <input class="checkbox" type="checkbox" name="bridge" value="devils_bridge" checked>
-                <div class="checkbox__text">Мост Дьявола</div>
+                <span class="checkbox__text">Мост Дьявола</span>
               </label>
               <label class="profile__title profile__title--sightseeing">
                 <input class="checkbox" type="checkbox" name="bell" value="mountain_bell" checked>
-                <div class="checkbox__text">Гора-Колокол</div>
+                <span class="checkbox__text">Гора-Колокол</span>
               </label>
               <label class="profile__title profile__title--sightseeing">
                 <input class="checkbox" type="checkbox" name="park" value="slide_park" checked>
-                <div class="checkbox__text">Слайд-парк</div>
+                <span class="checkbox__text">Слайд-парк</span>
               </label>
               <label class="profile__title profile__title--sightseeing">
                 <input class="checkbox" type="checkbox" name="rock" value="red_rocks">
-                <div class="checkbox__text">Красные скалы</div>
+                <span class="checkbox__text">Красные скалы</span>
               </label>
             </div>
           </fieldset>
@@ -177,6 +180,6 @@
         </button>
       </div>
     </div>
-    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
   </body>
 </html>

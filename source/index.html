@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/picturefill.js"></script>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
@@ -25,16 +26,18 @@
         </ul>
         <button class="main-menu__toggle main-menu__toggle--closed main-menu__toggle--nojs"></button>
       </nav>
-      <div class="logo header__logo">
+      <div class="logo">
         <a>
-          <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" alt="Логотип сайта">
+          </picture>
         </a>
       </div>
     </header>
     <main class="main">
-      <div class="promo promo--big">
-        <img class="promo__image" src="img/text-sedona-index.svg" width="282" height="214" alt="Слоган">
-      </div>
+      <div class="promo promo--big"></div>
       <section class="advantages">
         <div class="advantages__description description">
           <h2 class="description__header">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -46,7 +49,11 @@
             <p class="reason-item__text">— №1 —</p>
             <p class="reason-item__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="reason-item__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x" sizes="">
+            <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+            <img class="reason-item__image" srcset="img/main-city-mobile@1x.jpg 1x, img/main-city-mobile@2x.jpg 2x" alt="Фото города">
+          </picture>
         </div>
         <ul class="enumeration advantages__list">
           <li class="enumeration__item enumeration__item--housing">
@@ -63,12 +70,16 @@
           </li>
         </ul>
         <div class="reason-item reason-item--reverse">
-          <div class="reason-item__wrapper">
+          <div class="reason-item__wrapper reason-item__wrapper--reverse">
             <h2 class="reason-item__header">Там есть Мост дьявола</h2>
             <p class="reason-item__text">— №2 —</p>
             <p class="reason-item__text reason-item__text--reverse">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="reason-item__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото города">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x" sizes="">
+            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+            <img class="reason-item__image reason-item__image--reverse" srcset="img/main-bridge-mobile@1x.jpg 1x, img/main-bridge-mobile@2x.jpg 2x"  alt="Фото города">
+          </picture>
         </div>
         <ul class="sight-list advantages__items">
           <li class="sight-list__item">
@@ -91,14 +102,18 @@
       <div class="suggestion">
         <div class="suggestion__wrapper">
           <h2 class="suggestion__caption">Заинтересовались?</h2>
-          <p class="suggestion__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="suggestion__text">Укажите предполагаемые даты поездки,<br class="suggestion__skip"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
-        <button class="suggestion__button button" href="#"тз>
+        <button class="suggestion__button button">
           <span class="button__text">Найти гостиницу</span>
         </button>
       </div>
       <div class="map main__map">
-        <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__image" srcset="img/bg-map-mobile@1x.jpg 1x, img/bg-map-mobile@2x.jpg 2x" alt="Карта">
+        </picture>
       </div>
     </main>
     <footer class="footer">
@@ -141,6 +156,6 @@
         </a>
       </div>
     </footer>
-    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
   </body>
 </html>

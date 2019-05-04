@@ -7,7 +7,6 @@
 }
 
 .reason-item__wrapper {
-
   margin: 0 auto;
 }
 
@@ -75,14 +74,31 @@
 @media (min-width: $desktop-width) {
   .reason-item {
     width: $desktop-width;
+    height: 256px;
+    overflow: hidden;
+    position: relative;
   }
 
   .reason-item__image {
     width: 800px;
+    position: absolute;
+    top: -71px;
+    left: 400px;
+
+    &--reverse {
+      left: 0;
+      top: -74px;
+    }
   }
 
   .reason-item__wrapper {
     width: 400px;
+    margin-left: 0;
+
+    &--reverse {
+      margin-right: 0;
+      margin-left: auto;
+    }
   }
 
   .reason-item__header {
@@ -95,6 +111,10 @@
     &:last-child {
       padding-top: 17px;
       width: 265px;
+    }
+
+    &--reverse:last-child {
+      width: 220px;
     }
   }
 }
