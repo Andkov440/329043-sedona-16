@@ -47,7 +47,7 @@
     margin-bottom: 31px;
 
     &--photo {
-      margin-top: 64px;
+      margin-top: 67px;
     }
   }
 
@@ -66,12 +66,16 @@
   .suggestion__button {
     width: 458px;
   }
+
+  .suggestion__skip {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .suggestion__caption {
     &--photo {
-      margin-top: 71px;
+      margin-top: 73px;
     }
   }
 
@@ -79,7 +83,7 @@
     margin-bottom: 46px;
 
     &--photo {
-      margin-bottom: 74px;
+      margin-bottom: 72px;
     }
   }
 }

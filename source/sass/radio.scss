@@ -58,5 +58,12 @@
 @media (min-width: $desktop-width) {
   .radio__text {
     padding-left: 78px;
+    padding-top: 24px;
+    padding-bottom: 29px;
+
+    &::before {
+      top: 11px;
+      left: 3px;
+    }
   }
 }

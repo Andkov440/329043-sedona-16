@@ -1,6 +1,7 @@
 @import "normalize";
 @import "fonts";
 @import "variables";
+@import "visually-hidden";
 @import "advantages";
 @import "button";
 @import "copyright";
@@ -12,9 +13,9 @@
 @import "map";
 @import "main-menu";
 @import "modal";
-@import "page";
+@import "scaffolding";
 @import "photo-list";
-@import "player";
+@import "video";
 @import "profile";
 @import "promo";
 @import "reason-item";
@@ -24,6 +25,5 @@
 @import "suggestion";
 @import "radio";
 @import "checkbox";
-@import "player-button";
 @import "photo";
 @import "feedback";

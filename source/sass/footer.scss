@@ -3,7 +3,7 @@
 }
 
 .footer__social {
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 }
 
 .footer__hashtag {
@@ -11,51 +11,78 @@
   font-weight: bold;
   line-height: 26px;
   color: $color-black;
-  margin-top: 30px;
+  margin-top: 32px;
   margin-bottom: 38px;
 
   &--photo {
-    margin-top: 137px;
+    margin-top: 140px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .footer {
+    min-height: 120px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: $tablet-width;
     margin: 0 auto;
 
-    &--big {
-      padding-top: 168px;
-    }
-  }
-
-  .footer__social {
-    margin: 32px 115px;
-
     &--photo {
-      margin: 0 115px;
+      padding-top: 45px;
     }
   }
 
   .footer__hashtag {
     margin: 0;
+    padding-bottom: 15px;
+    padding-left: 2px;
+
+    &--photo {
+      padding-left: 8px;
+      padding-right: 4px;
+    }
+
+    &--form {
+      padding-bottom: 11px;
+      padding-left: 5px;
+    }
+  }
+
+  .footer__social {
+    margin-bottom: 0;
+    padding-right: 8px;
+    padding-bottom: 10px;
+
+    &--photo {
+      padding-right: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer {
     width: $desktop-width;
-    padding-top: 30px;
 
     &--big {
       padding-top: 214px;
     }
+
+    &--photo {
+      padding-top: 89px;
+    }
+  }
+
+  .footer__hashtag {
+    padding-bottom: 12px;
+
+    &--photo {
+      padding-left: 6px;
+      padding-right: 13px;
+    }
   }
 
   .footer__social {
-    margin: 0 274px;
+    margin: auto 32px;
   }
 }

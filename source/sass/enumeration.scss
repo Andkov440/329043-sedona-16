@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+.enumeration__skip {
+  display: none;
+}
+
 .enumeration__item {
   position: relative;
   padding-left: 70px;
@@ -62,7 +66,7 @@
     display: flex;
     text-align: center;
     justify-content: space-between;
-    width: 671px;
+    width: 676px;
     margin: 0 auto;
     padding-top: 18px;
   }
@@ -83,13 +87,19 @@
 
     &:last-child {
       padding-bottom: 0;
+      width: 157px;
+
+      &::before {
+        left: 39px;
+        top: 41px;
+      }
     }
 
     &::before {
       width: 77px;
       height: 75px;
       top: 39px;
-      left: 42px;
+      left: 43px;
     }
   }
 
@@ -106,13 +116,27 @@
 
   .enumeration__item {
     width: 283px;
+    padding-top: 136px;
 
     &::before {
       left: 102px;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      width: 300px;
+
+      &::before {
+        left: 110px;
+      }
     }
   }
 
   .enumeration__text {
     margin-bottom: 84px;
+  }
+
+  .enumeration__skip {
+    display: block;
   }
 }
