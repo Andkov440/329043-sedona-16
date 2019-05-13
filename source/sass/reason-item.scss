@@ -4,6 +4,12 @@
   text-align: center;
   width: 320px;
   margin: 0 auto;
+
+  &--triangle {
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: 50% top;
+  }
 }
 
 .reason-item__wrapper {
@@ -16,6 +22,10 @@
   line-height: 26px;
   padding-top: 39px;
   margin: 0;
+
+  &--triangle {
+    padding-top: 77px;
+  }
 }
 
 .reason-item__text {
@@ -44,6 +54,10 @@
 
     &--reverse {
       flex-direction: row-reverse;
+    }
+
+    &--triangle {
+      background-image: none;
     }
   }
 

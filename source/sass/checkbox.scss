@@ -23,10 +23,24 @@
     background-color: $color-grey;
     margin-right: 14px;
   }
+
+  &:hover::before {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    border-color: #d5d5d5;
+    background-color: #d5d5d5;
+  }
 }
 
 .checkbox:checked + .checkbox__text::before {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.checkbox:checked:active + .checkbox__text:active::before {
+  opacity: 0.3;
 }

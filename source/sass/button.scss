@@ -40,6 +40,10 @@
 @media (min-width: $tablet-width) {
   .button__text {
     padding-right: 4px;
+
+    &--form {
+      padding-right: 11px;
+    }
   }
 }
 

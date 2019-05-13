@@ -1,6 +1,13 @@
 .profile {
   border-top: 1px solid #e5e5e5;
   line-height: 26px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.profile__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .profile__item {
@@ -13,6 +20,10 @@
   &--emotions {
     border-bottom: none;
   }
+
+  &--introduсtion {
+    padding-bottom: 4px;
+  }
 }
 
 .profile__caption {
@@ -23,6 +34,10 @@
   position: relative;
   margin-bottom: 23px;
   padding-top: 18px;
+
+  &--contacts {
+    margin-bottom: 22px;
+  }
 
   &--impression {
     margin-bottom: 13px;
@@ -39,7 +54,7 @@
 
 .profile__field {
   height: 48px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   margin-left: 16px;
   width: 100%;
   border: 4px solid $color-grey;
@@ -59,12 +74,13 @@
     border: 4px solid #e5e5e5;
   }
 
-  &:active {
+  &:focus {
     background-color: $color-white;
     border: 4px solid #e5e5e5;
   }
 
   &--contacts {
+    width: 272px;
     margin-left: 0;
     margin-bottom: 12px;
   }
@@ -74,7 +90,7 @@
   content: "";
   position: absolute;
   width: 58px;
-  height: 58px;
+  height: 56px;
   right: 0;
   top: 33px;
   background-color: #e6e6e6;
@@ -184,17 +200,18 @@
     border-bottom: none;
 
     &--introduсtion {
-      width: 323px;
+      width: 279px;
     }
 
     &--impression {
       order: -1;
-      width: 323px;
+      width: 278px;
       border-right: 1px solid #e5e5e5;
+      padding-right: 43px;
     }
 
     &--contacts {
-      margin-top: 47px;
+      margin-top: 46px;
       border-top: 1px solid #e5e5e5;
     }
 
@@ -270,6 +287,7 @@
       flex-wrap: wrap;
       justify-content: center;
       padding-left: 20px;
+      width: 540px;
     }
 
     &--contacts {
@@ -310,13 +328,14 @@
       margin: 0 21px 6px 21px;
 
       &:last-child {
-        margin-bottom: 0;
+        margin-bottom: 6px;
       }
     }
   }
 
   .profile__field {
     &--contacts {
+      width: 639px;
       margin-bottom: 23px;
     }
   }
@@ -335,14 +354,15 @@
     &--introduсtion {
       width: 478px;
       margin-left: 1px;
+      padding-bottom: 0;
     }
 
     &--emotions {
-      margin-top: 52px;
+      margin-top: 53px;
     }
 
     &--impression {
-      width: 480px;
+      width: 437px;
     }
   }
 
@@ -382,12 +402,21 @@
     &--sightseeing {
       margin: 0;
       width: 206px;
+
+      &:nth-child(2) {
+        margin-left: 23px;
+        margin-right: 23px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
   .profile__field {
     &--contacts {
-      width: 257px;
+      width: 307px;
     }
   }
 
@@ -399,10 +428,15 @@
 
     &--introduсtion {
       margin-left: 76px;
+      margin-bottom: 61px;
     }
 
     &--contacts {
-      margin-bottom: 73px;
+      margin-bottom: 76px;
+    }
+
+    &--sightseeing {
+      margin-bottom: 30px;
     }
   }
 
@@ -412,8 +446,9 @@
   }
 
   .profile__icon {
-    right: 4px;
+    right: 0;
     top: 0;
+    height: 58px;
 
     &--phone {
       right: 80px;

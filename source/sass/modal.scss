@@ -4,6 +4,12 @@
   padding-bottom: 36px;
   margin: 0 auto;
   display: none;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  position: fixed;
+  top: 30%;
+  left: 0;
+  right: 0;
+  background-color: $color-white;
 }
 
 .modal__caption {
@@ -11,7 +17,7 @@
   font-weight: bold;
   line-height: 26px;
   color: #000000;
-  padding-top: 60px;
+  padding-top: 23px;
   padding-bottom: 13px;
 
   &--wide {
@@ -38,13 +44,11 @@
 @media (min-width: $tablet-width) {
   .modal--wide {
     width: 640px;
-    margin: 0 auto;
     padding-bottom: 0;
   }
 
   .modal--short {
     width: 400px;
-    margin: 0 auto;
   }
 
   .modal__caption {

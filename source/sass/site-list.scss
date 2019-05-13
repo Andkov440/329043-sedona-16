@@ -46,6 +46,10 @@
     &:nth-child(3) {
       margin-left: auto;
     }
+
+    &:nth-child(3) .site-list__link {
+      padding-left: 27px;
+    }
   }
 
   .site-list__link {
@@ -89,5 +93,11 @@
 @media (min-width: $desktop-width) {
   .site-list {
     width: 1200px;
+  }
+
+  .site-list__item {
+    &:nth-child(3) .site-list__link {
+      padding-left: 20px;
+    }
   }
 }

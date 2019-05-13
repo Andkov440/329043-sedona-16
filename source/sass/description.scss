@@ -26,7 +26,8 @@
   }
 
   &--form {
-    margin-bottom: 26px;
+    margin-bottom: 28px;
+    margin-top: 38px;
   }
 }
 
@@ -34,7 +35,7 @@
   color: #333333;
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 45px;
+  margin-bottom: 7px;
 
   &--photo {
     margin-bottom: 26px;
@@ -91,6 +92,7 @@
 
   .description__text {
     &--form {
+      margin-top: 32px;
       margin-bottom: 0;
     }
   }
