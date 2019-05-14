@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона. Форма отзыва</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/picturefill.js"></script>
   </head>
@@ -54,10 +56,10 @@
             <legend class="profile__caption profile__caption--introduсtion">Представьтесь:</legend>
             <div class="profile__wrapper profile__wrapper--introduсtion">
               <label class="profile__title profile__title--introduсtion">Имя*:
-                <input class="profile__field profile__field--active profile__field--introduсtion" type="text" name="username" placeholder="Петр" required>
+                <input class="profile__field profile__field--active profile__field--introduсtion" type="text" name="username" placeholder="Петр" required="">
               </label>
               <label class="profile__title profile__title--introduсtion">Фамилия*:
-                <input class="profile__field profile__field--introduсtion" type="text" name="suname" placeholder="Иванов" required>
+                <input class="profile__field profile__field--introduсtion" type="text" name="suname" placeholder="Иванов" required="">
               </label>
               <label class="profile__title profile__title--introduсtion">Отчество:
                 <input class="profile__field profile__field--introduсtion" type="text" name="patronymic" placeholder="Александрович">
@@ -69,12 +71,12 @@
             <div class="profile__wrapper profile__wrapper--contacts">
               <label class="profile__title profile__title--contacts">
                 <span class="profile__name profile__name--contacts"><span class="profile__hide">Контактный</span> телефон*:</span>
-                <input class="profile__field profile__field--contacts" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+                <input class="profile__field profile__field--contacts" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required="">
                 <span class="profile__icon profile__icon--phone"></span>
               </label>
               <label class="profile__title profile__title--contacts">
                 <span class="profile__name profile__name--contacts">Электронная почта*:</span>
-                <input class="profile__field profile__field--contacts" type="email" name="email" placeholder="Введите e-mail" required>
+                <input class="profile__field profile__field--contacts" type="email" name="email" placeholder="Введите e-mail" required="">
                 <span class="profile__icon profile__icon--mail"></span>
               </label>
             </div>
@@ -83,7 +85,7 @@
             <legend class="profile__caption profile__caption--impression">Ваше общее впечатление:</legend>
             <div class="profile__wrapper profile__wrapper--impression">
               <label class="profile__title profile__title--impression">
-                <input class="radio" type="radio" name="impression" value="positive" checked>
+                <input class="radio" type="radio" name="impression" value="positive" checked="">
                 <span class="radio__text">Скорее положительное</span>
               </label>
               <label class="profile__title profile__title--impression">
@@ -100,15 +102,15 @@
             <legend class="profile__caption profile__caption--sightseeing">Посещенные достопримечательности:</legend>
             <div class="profile__wrapper profile__wrapper--sightseeing">
               <label class="profile__title profile__title--sightseeing ">
-                <input class="checkbox" type="checkbox" name="bridge" value="devils_bridge" checked>
+                <input class="checkbox" type="checkbox" name="bridge" value="devils_bridge" checked="">
                 <span class="checkbox__text">Мост Дьявола</span>
               </label>
               <label class="profile__title profile__title--sightseeing">
-                <input class="checkbox" type="checkbox" name="bell" value="mountain_bell" checked>
+                <input class="checkbox" type="checkbox" name="bell" value="mountain_bell" checked="">
                 <span class="checkbox__text">Гора-Колокол</span>
               </label>
               <label class="profile__title profile__title--sightseeing">
-                <input class="checkbox" type="checkbox" name="park" value="slide_park" checked>
+                <input class="checkbox" type="checkbox" name="park" value="slide_park" checked="">
                 <span class="checkbox__text">Слайд-парк</span>
               </label>
               <label class="profile__title profile__title--sightseeing">

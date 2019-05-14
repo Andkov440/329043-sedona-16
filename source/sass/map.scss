@@ -1,3 +1,19 @@
 .map {
   text-align: center;
+  width: 320px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: $desktop-width;
+  }
 }
