@@ -64,7 +64,7 @@ gulp.task("webp", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "build /",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
