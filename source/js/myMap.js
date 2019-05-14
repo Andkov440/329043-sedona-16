@@ -16,7 +16,7 @@ function init () {
     balloonContent: 'Это красивая метка'
     }, {
       iconLayout: 'default#image',
-      iconImageHref: '../img/icon-map-marker.svg',
+      iconImageHref: 'img/icon-map-marker.svg',
       iconImageSize: [27, 27],
   });
 
