@@ -6,6 +6,21 @@
   margin-right: auto;
 }
 
+.map__picture {
+  position: relative;
+  display: none;
+
+  &--nojs {
+    display: block;
+  }
+}
+
+.map__marker {
+  position: absolute;
+  top: 160px;
+  left: 49%;
+}
+
 @media (min-width: $tablet-width) {
   .map {
     width: $tablet-width;

@@ -188,6 +188,12 @@
     color: $color-white;
   }
 
+  .photo-list__like-count {
+    &::before {
+      background-image: url("../img/icon-like-desktop.svg");
+    }
+  }
+
   .photo-list__item {
     position: relative;
     width: 400px;

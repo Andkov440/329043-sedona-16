@@ -1,4 +1,4 @@
-.video__player {
+.player {
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -17,7 +17,7 @@
     background-image: url("../img/video-mobile@2x.jpg");
   }
 
-  .video__player-controls {
+  .player__controls {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -27,7 +27,7 @@
     height: 66px;
   }
 
-  .video__control-replay {
+  .player__control-replay {
     margin-top: 23px;
     margin-bottom: 23px;
     margin-left: 25px;
@@ -42,7 +42,7 @@
     }
   }
 
-  .video__control-progress {
+  .player__control-progress {
     position: absolute;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.6);
@@ -76,7 +76,7 @@
     }
   }
 
-  .video__control-subtitles {
+  .player__control-subtitles {
     margin-top: 23px;
     margin-bottom: 23px;
     margin-left: 133px;
@@ -91,7 +91,7 @@
     }
   }
 
-  .video__control-fullscreen {
+  .player__control-fullscreen {
     margin-top: 23px;
     margin-bottom: 23px;
     margin-left: 31px;
@@ -108,7 +108,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .video__player {
+  .player {
     width: 648px;
     margin: 0 auto;
     min-height: 500px;
@@ -121,12 +121,12 @@
       background-image: url("../img/video-tablet@2x.jpg");
     }
 
-    .video__player-controls {
+    .player__controls {
       background-color: rgba(0, 0, 0, 0.6);
       height: 93px;
     }
 
-    .video__control-replay {
+    .player__control-replay {
       margin-top: 36px;
       margin-left: 35px;
       fill: $color-white;
@@ -140,7 +140,7 @@
       }
     }
 
-    .video__control-progress {
+    .player__control-progress {
       position: relative;
       top: 0;
       left: 0;
@@ -164,7 +164,7 @@
       }
     }
 
-    .video__control-subtitles {
+    .player__control-subtitles {
       margin-top: 36px;
       margin-left: 318px;
       fill: $color-white;
@@ -178,7 +178,7 @@
       }
     }
 
-    .video__control-fullscreen {
+    .player__control-fullscreen {
       margin-top: 36px;
       margin-left: 31px;
       fill: $color-white;
@@ -195,7 +195,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .video__player {
+  .player {
     width: 800px;
     margin: 0 auto;
     background-image: url("../img/video-desktop@1x.jpg");
@@ -204,11 +204,11 @@
       background-image: url("../img/video-desktop@2x.jpg");
     }
 
-    .video__control-subtitles {
+    .player__control-subtitles {
       margin-left: 470px;
     }
 
-    .video__control-progress::after {
+    .player__control-progress::after {
       width: 418px;
     }
   }

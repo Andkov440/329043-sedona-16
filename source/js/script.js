@@ -1,8 +1,10 @@
 var navList = document.querySelector('.main-menu__list');
 var navToggle = document.querySelector('.main-menu__toggle');
+var mapPicture = document.querySelector('.map__picture');
 
 navToggle.classList.remove('main-menu__toggle--nojs');
 navList.classList.add('main-menu__list--closed');
+mapPicture.classList.remove('map__picture--nojs');
 
 navToggle.addEventListener('click', function() {
     if (navToggle.classList.contains('main-menu__toggle--closed')) {
